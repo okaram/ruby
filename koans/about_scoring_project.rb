@@ -29,7 +29,36 @@ require File.expand_path(File.dirname(__FILE__) + '/edgecase')
 #
 # Your goal is to write the score method.
 
+def three?(dice)
+	if(dice[0]==dice[1] && dice[1]==dice[2])
+		dice[0]
+	else
+		false # nya nya :)
+	end
+end
+
 def score(dice)
+	dice=dice.sort
+	score=0
+	while !dice.empty?
+		if(t=three?(dice))
+			if t==1
+				score+=1000
+			else
+				score+=100*t
+			end
+			dice.shift(3)
+		else
+			if dice[0]==1
+				score+=100
+			end
+			if dice[0]==5
+				score+=50
+			end
+			dice.shift
+		end
+	end
+	score
   # You need to write this method
 end
 
