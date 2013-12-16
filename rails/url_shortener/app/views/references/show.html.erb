@@ -1,0 +1,9 @@
+<h1>Reference # <%= @reference.id %></h1>
+<p id="notice"><%= notice %></p>
+
+URL: <%= @reference.url %><br>
+
+Visit Count: <%= @reference.visit_count  %><br>
+
+<%= link_to 'Edit', edit_reference_path(@reference) %> |
+<%= link_to 'Back', references_path %>

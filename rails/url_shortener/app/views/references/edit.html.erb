@@ -1,0 +1,9 @@
+<h1>Editing reference</h1>
+
+Id: <%= @reference.id %><br>
+Visit Count: <%= @reference.visit_count  %><br>
+
+<%= render 'form' %>
+
+<%= link_to 'Show', @reference %> |
+<%= link_to 'Back', references_path %>

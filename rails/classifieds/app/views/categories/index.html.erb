@@ -4,7 +4,7 @@
   <tr>
     <th>Title</th>
     <th>Order</th>
-    <th>Super category</th>
+    <th>Heading</th>
     <th></th>
     <th></th>
     <th></th>
@@ -14,7 +14,7 @@
   <tr>
     <td><%= category.title %></td>
     <td><%= category.order %></td>
-    <td><%= category.super_category_id %></td>
+    <td><%= category.heading_id %></td>
     <td><%= link_to 'Show', category %></td>
     <td><%= link_to 'Edit', edit_category_path(category) %></td>
     <td><%= link_to 'Destroy', category, method: :delete, data: { confirm: 'Are you sure?' } %></td>

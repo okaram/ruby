@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Title:</b>
+  <%= @super_category.title %>
+</p>
+
+<p>
+  <b>Order:</b>
+  <%= @super_category.order %>
+</p>
+
+<h2>Categories</h2>
+<% @super_category.categories.sort {|a,b| a.order <=> b.order}.each do |cat| %>
+    <p><%= cat.title %></p>
+<% end %>
+
+<h2>Again</h2>
+<ul>
+    <%= render @super_category.categories %>
+</ul>
+
+<%= link_to 'Edit', edit_super_category_path(@super_category) %> |
+<%= link_to 'Back', super_categories_path %>

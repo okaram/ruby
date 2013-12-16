@@ -1,0 +1,25 @@
+<%= form_for(@super_category) do |f| %>
+  <% if @super_category.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@super_category.errors.count, "error") %> prohibited this super_category from being saved:</h2>
+
+      <ul>
+      <% @super_category.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :title %><br />
+    <%= f.text_field :title %>
+  </div>
+  <div class="field">
+    <%= f.label :order %><br />
+    <%= f.number_field :order %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

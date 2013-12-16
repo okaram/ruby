@@ -1,4 +1,4 @@
 class Category < ActiveRecord::Base
-    attr_accessible :order, :super_category_id, :title
-    belongs_to :super_category
+  attr_accessible :heading_id, :order, :title
+  belongs_to :heading
 end

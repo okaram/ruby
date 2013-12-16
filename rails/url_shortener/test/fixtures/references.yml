@@ -1,0 +1,9 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  url: 'http://yahoo.com'
+  user_id: 1
+
+two:
+  url: 'http://google.com'
+  user_id: 1

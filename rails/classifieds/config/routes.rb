@@ -2,7 +2,7 @@ Classifieds::Application.routes.draw do
   resources :categories
 
 
-  resources :super_categories
+  resources :headings
 
 
   # The priority is based upon order of creation:

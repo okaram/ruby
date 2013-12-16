@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Title:</b>
+  <%= @heading.title %>
+</p>
+
+<p>
+  <b>Order:</b>
+  <%= @heading.order %>
+</p>
+
+
+<%= link_to 'Edit', edit_heading_path(@heading) %> |
+<%= link_to 'Back', headings_path %>

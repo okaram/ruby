@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Title:</b>
+  <%= @super_category.title %>
+</p>
+
+<p>
+  <b>Order:</b>
+  <%= @super_category.order %>
+</p>
+
+
+<%= link_to 'Edit', edit_super_category_path(@super_category) %> |
+<%= link_to 'Back', super_categories_path %>
